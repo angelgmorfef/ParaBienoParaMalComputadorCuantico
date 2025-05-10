@@ -70,6 +70,7 @@ nav{
     height: 3rem;
     padding: 1rem 2rem;
     display: flex;
+    text-align: center;
     justify-content: center; 
     align-items: center;
     background-color: #e86262; 
@@ -81,16 +82,17 @@ nav ul {
   display: flex;
   padding: 0;
   margin: 0;
-  gap: 24rem; 
+  gap: 15rem; 
 }
 
 nav ul li a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: #ffffff; /* Color del texto */
+  color: #ffffff; 
   padding: 0.5rem 1rem;
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 1);
 }
+
 nav ul li a:hover {
   text-decoration: underline; 
   color: #000000; 
@@ -113,12 +115,20 @@ main {
   }
 }
 
-aside {
+div {
+  min-width: 200px;
+  max-width: 15%;
+  padding: 0.4rem;
+  margin: 2%;
+  margin-right: 0%;
+}
+
+aside{
   max-width: 15%;
   min-width: 200px;
   text-decoration: none;
   background-color: #1f60a684; 
-  color: #000000; 
+  color: #ffffff;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0.5,0.5,0.5,0.5);
   margin: 3%;
@@ -131,7 +141,7 @@ aside h3{
 
 aside ol li a{
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   font-size-adjust: 0.5;
   text-align: start;
 }
@@ -211,6 +221,7 @@ footer a:hover {
     font-size: 0.95rem;
   }
 }
+
 
 
 
