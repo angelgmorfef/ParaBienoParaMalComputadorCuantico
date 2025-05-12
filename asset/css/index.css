@@ -24,7 +24,6 @@ body{
     width: 100%;
 }
 
-
 @media (max-width: 600px) {
     body {
       background-position: top center;
@@ -73,8 +72,8 @@ nav{
     text-align: center;
     justify-content: center; 
     align-items: center;
-    background-color: #e86262; 
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    background-color: #121212;  
+    box-shadow: 0 2px 10px -2px rgba(0,0,0,1);
 }
 
 nav ul {
@@ -95,7 +94,7 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline; 
-  color: #000000; 
+  color: #f92c2c; 
 }
 
 main {
@@ -115,7 +114,19 @@ main {
   }
 }
 
-div {
+aside {
+  position: absolute; 
+  width: 200px;      
+  background: #576482;   
+  box-shadow: 0 5px 8px -2px rgba(0,0,0,0.8); 
+  transition: top 1s ease-out;
+  margin-right: 0%;
+  padding: 2rem;
+  color: #ffffff;
+  font-size: 70%;
+}
+
+div{
   min-width: 200px;
   max-width: 15%;
   padding: 0.4rem;
@@ -123,32 +134,27 @@ div {
   margin-right: 0%;
 }
 
-aside{
-  max-width: 15%;
-  min-width: 200px;
-  text-decoration: none;
-  background-color: #1f60a684; 
-  color: #ffffff;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0.5,0.5,0.5,0.5);
-  margin: 3%;
-  margin-right: 0%;
-}
-
 aside h3{
   text-align: center;
+  align-content: center;
 }
 
 aside ol li a{
   text-decoration: none;
-  color: #ffffff;
   font-size-adjust: 0.5;
   text-align: start;
+  color: #ffffff;
 }
 
 aside ol li a:hover {
   text-decoration: underline; 
-  color: #f92c2c; 
+  color: #000000; 
+}
+
+.highlight {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -163,7 +169,7 @@ section {
   background-color: #00000084; 
   color: #ffffff; 
   padding: 3rem;
-  box-shadow: 0 4px 12px rgba(0.5,0.5,0.5,0.5);
+  box-shadow: 0 5px 8px -2px rgba(0,0,0,0.8); 
   text-shadow: 0 2px 5px rgba(0,0,0,0.5);
   margin: 3%;
   margin-left: 0%;
@@ -171,7 +177,13 @@ section {
 }
 
 section h2 {
-  font-size: 2.5rem;
+  font-size:4rem;
+  text-align: start;
+}
+
+article{
+  padding: 1.5rem;
+  transition: background-color 0.5s ease;
 }
 
 figure{
@@ -192,10 +204,11 @@ figure figcaption{
 
 footer {
   height: 15rem;
-  background-color: #00000084; 
+  background-color: #121212; 
   color: #ffffff;               
   text-align: center;  
-  padding: 1.5rem 1rem;        
+  padding: 1.5rem 1rem; 
+  box-shadow: 0 -4px 8px -2px rgba(0,0,0,0.8);      
 }
 
 footer p {
@@ -212,7 +225,7 @@ footer a {
 
 footer a:hover {
   text-decoration: underline; 
-  color: #ddd;                
+  color: #f92c2c;                
 }
 
 @media (max-width: 480px) {
